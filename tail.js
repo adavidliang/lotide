@@ -1,11 +1,11 @@
-const assertEqual = function (actual, expected) {
-  if (actual === expected) {
-    console.log(`✅✅✅  Assertion Passed: ${actual} === ${expected}`);
-  } else if (actual !== expected) {
-    console.log(`❌❌❌  Assertion Failed: ${actual} !== ${expected}`);
-  }
-};
 
-const tail = function() {
-  
+const tail = function(arr) {
+  const tail = [];
+  for (let i = 1; i <arr.length; i++){
+    tail.push(arr[i])
+  }
+  console.log(tail);
+  return tail;
 }
+
+module.exports = tail;
